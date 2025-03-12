@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 166px;
+    background-color: white;
+}
+
+nav{
+    height: 180px;
+    background-color: white;
+}
+
+article {
+    background-color: white;
+}
+
+.contenidor {
+    width: 1716px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.entrada {
+    width: 536px;
+    height: 620px;
+    margin: 18px;
+    background-color: white;
+    float: left;
+}
+.img {
+    width:536px;
+    height: 536px;
+}
+
+.reaccions {
+    height: 84px;
+    overflow: hidden;
+}
+
+.bolita {
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%;
+    background-color: blue;
+	display: inline-block;
+	margin: 28px;
+    padding: 10px;
+    border: solid 5px white;
+    box-shadow: 0px 0px 10px fuchsia;
+    background-image: url(../img/kylie.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    float: left;
+}
+.bolita:first-child::after {
+ content:"+";
+ display: block;
+ background-color: rgb(21, 170, 219);
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ color: white;
+ font-size: 32px;
+ border: solid 5px white;
+ position: relative;
+ top: 55px;
+ left: 60px;
+}
+
+.bolita:hover {
+    opacity: 80%;
+}
+
+.fotoautor{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/kylie.jpg);
+    padding: 10px;
+    margin: 10px;
+    border: solid 5px white;
+    box-shadow: 0px 0px 10px fuchsia;
+    float: left;
+}
+
+.autor {
+    width: 268px;
+    height: 40px;
+    line-height:40px;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.moment {
+    width:268px;
+    color: gainsboro;
+    font-size: 20px;
+}
+
+.esquerre {
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+.dreta {
+    width: 50%;
+    margin: 0;
+    float: right;
+}
+
+.comentari {
+    height: 40px;
+    line-height: 40px;
+    font-weight:700;
+    font-size: 22px;
+    width: 180px;
+    float: left;
+}
+
+.like {
+    height: 40x;
+    width: 40px;
+    float: left;
+}
+
+.mes {
+    height: 40x;
+    width: 40px;
+    float: left;
+}
+
+.home {
+    width: 208px;
+    height: 39px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/ifpagram_09\ Pequeño.jpeg);
+    margin: 50px 0 0 0;
+    display: inline-block;
+}
+
+.menu {
+    width: 208px;
+    height: 39px;
+    margin: 50px 470px 0 470px;
+    background: ;
+    display: inline-block;
+}
+
+.menu li {
+    width: 32px;
+    height: 32px;
+    margin: 3px 8px;
+    display: inline-block;
+    background-image: url(../img/ifpagram_11\ Pequeño.jpeg);
+}
+
+.menu .inici{
+    background-position: -5px -2px;
+}
+
+.menu .cerca{
+    background-position: -90px -2px;
+}
+
+.menu .reels{
+    background-position: -173px -2px;
+}
+
+.menu .favorits{
+    background-position: -257px -2px;
+}
+
+.perfil{
+    width: 208px;
+    height: 39px;
+    margin: 50px 0 0 0;
+    background: ;
+    display: inline-block;
+}
+
+input {
+    visibility: hidden;
+  }
+  
+  #agradador{
+    margin: 2rem 0 0 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #ddd;
+    position: relative;
+    border-radius: 1rem;
+    float:left;
+    bottom: 20px;
+  }
+  
+  #agradador label {
+    width: 2rem;
+    height: 2rem;
+    visibility: visible; 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+    opacity: 0;
+    background-image: url(../img/heart.svg.png); 
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+  }
+  
+  #agradador input[type=checkbox]:checked+label {
+    opacity: 1;
+  }
